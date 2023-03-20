@@ -115,8 +115,10 @@ And below is an example of what the data in a log file, `2018-11-12-events.json`
 
 `dl.cfg`
 
+
 Add the S3 credentials in dl.cfg file which will be required to read and write the data in the S3 buckets.
 
 `etl.py`
+
 
 The script uses Apache spark to read the song and log data in the S3 bucket, transforms the data into fact and dimensional tables and then loads the table data into output_data S3 bucket in parquet format.
